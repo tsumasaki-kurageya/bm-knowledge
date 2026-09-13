@@ -32,6 +32,17 @@ last_reviewed: 2026-09-13
 - 警戒・入退管理等を実施し、避難や安全上の支障を連絡する。
 - 非常時の連絡・役割・対応方法を整え、訓練・見直しにつなぐ。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-019：警戒・入退管理・危険予防](../02-processes/preventive-security.md) | 警戒・入退管理の結果 |
+| [PROCESS-020：非常時の体制・対応計画と訓練](../02-processes/emergency-preparedness.md) | 連絡・役割・対応計画 |
+
+関連する他領域の業務：[PROCESS-005：実施体制・役割・資源の整備](../02-processes/delivery-team.md)、[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-015：不具合・異常の受付と影響判断](../02-processes/incident-triage.md)、[PROCESS-016：応急対応・復旧の調整と再開確認](../02-processes/incident-restoration.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

@@ -32,6 +32,17 @@ last_reviewed: 2026-09-13
 - 実施時期、概算費用、停止影響、財源・負担方法を比較し、計画を合意する。
 - 実績・劣化・価格・用途の変化に応じて短期と中長期の計画を更新する。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-003：年度・日常の保全計画の編成](../02-processes/annual-plan.md) | 対象期間の作業・対策計画 |
+| [PROCESS-004：中長期修繕・資金計画の作成と見直し](../02-processes/long-term-plan.md) | 時期別の修繕・更新候補と費用見通し |
+
+関連する他領域の業務：[PROCESS-002：適用要求・利用条件の整理](../02-processes/requirements.md)、[PROCESS-006：委託範囲・仕様の整理と発注](../02-processes/commissioning.md)、[PROCESS-017：修繕・更新案の具体化](../02-processes/repair-design.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)、[PROCESS-023：保全実績の評価と計画への反映](../02-processes/maintenance-review.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

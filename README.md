@@ -15,6 +15,12 @@
 - 現場 Evidence の本格的な投入
 - 業務エクスプローラーなどの UI 実装
 
+## 読み始める入口
+
+- [BUSINESS-001：建物維持保全の全体像](docs/00-business/overview.md)
+- [DOMAIN-000：業務領域一覧](docs/01-domains/overview.md)
+- [PROCESS-001：業務カタログ](docs/02-processes/overview.md)
+
 ## Source of Truth
 
 このリポジトリの Markdown を正本（Source of Truth）とします。口頭や Issue、Pull Request だけで確定した知識を残さず、レビュー済みの内容を Markdown に反映します。

@@ -33,6 +33,18 @@ last_reviewed: 2026-09-13
 - 要求・状態・実施結果・費用等を照合し、保全全体の不足と改善候補を整理する。
 - 要求・計画・実施体制へ見直し事項を返す。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md) | 更新された台帳・図書・履歴 |
+| [PROCESS-022：報告・提出と未対応事項の追跡](../02-processes/reporting-followup.md) | 提出・共有した報告 |
+| [PROCESS-023：保全実績の評価と計画への反映](../02-processes/maintenance-review.md) | 実績評価 |
+
+関連する他領域の業務：[PROCESS-003：年度・日常の保全計画の編成](../02-processes/annual-plan.md)、[PROCESS-004：中長期修繕・資金計画の作成と見直し](../02-processes/long-term-plan.md)、[PROCESS-008：依頼・契約に対する履行確認](../02-processes/completion-check.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

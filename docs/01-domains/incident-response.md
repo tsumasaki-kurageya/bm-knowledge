@@ -33,6 +33,17 @@ last_reviewed: 2026-09-13
 - 復旧に必要な調査・修理を依頼し、再開条件と残る制約を関係者で確認する。
 - 対応履歴と未完了の恒久対策を引き継ぐ。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-015：不具合・異常の受付と影響判断](../02-processes/incident-triage.md) | 異常の受付記録 |
+| [PROCESS-016：応急対応・復旧の調整と再開確認](../02-processes/incident-restoration.md) | 応急・復旧の経過 |
+
+関連する他領域の業務：[PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md)、[PROCESS-014：環境・衛生の測定調査と評価](../02-processes/environment-measurement.md)、[PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md)、[PROCESS-019：警戒・入退管理・危険予防](../02-processes/preventive-security.md)、[PROCESS-020：非常時の体制・対応計画と訓練](../02-processes/emergency-preparedness.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

@@ -33,6 +33,19 @@ last_reviewed: 2026-09-13
 - 作業日程、入退館、停止、作業安全、利用者への周知を関係者間で調整する。
 - 契約・依頼条件と実施結果を照合し、未完了事項を引き継ぐ。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-005：実施体制・役割・資源の整備](../02-processes/delivery-team.md) | 役割・権限・連絡先の整理 |
+| [PROCESS-006：委託範囲・仕様の整理と発注](../02-processes/commissioning.md) | 仕様・成果物・責任範囲を明らかにした依頼・契約 |
+| [PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md) | 合意した作業日時・条件 |
+| [PROCESS-008：依頼・契約に対する履行確認](../02-processes/completion-check.md) | 履行確認結果 |
+
+関連する他領域の業務：[PROCESS-002：適用要求・利用条件の整理](../02-processes/requirements.md)、[PROCESS-003：年度・日常の保全計画の編成](../02-processes/annual-plan.md)、[PROCESS-017：修繕・更新案の具体化](../02-processes/repair-design.md)、[PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md)、[PROCESS-020：非常時の体制・対応計画と訓練](../02-processes/emergency-preparedness.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)、[PROCESS-022：報告・提出と未対応事項の追跡](../02-processes/reporting-followup.md)、[PROCESS-023：保全実績の評価と計画への反映](../02-processes/maintenance-review.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。
