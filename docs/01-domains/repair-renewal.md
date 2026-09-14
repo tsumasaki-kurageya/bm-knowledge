@@ -32,6 +32,17 @@ last_reviewed: 2026-09-13
 - 施工方法、費用、停止・安全条件を比較し、必要な設計と工事を行う。
 - 完了時の状態と要求を確認し、図書・変更情報・残課題を運用へ渡す。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-017：修繕・更新案の具体化](../02-processes/repair-design.md) | 選定する対策案・範囲 |
+| [PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md) | 施工・試験等の結果 |
+
+関連する他領域の業務：[PROCESS-004：中長期修繕・資金計画の作成と見直し](../02-processes/long-term-plan.md)、[PROCESS-006：委託範囲・仕様の整理と発注](../02-processes/commissioning.md)、[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-008：依頼・契約に対する履行確認](../02-processes/completion-check.md)、[PROCESS-010：軽微な保守・手入れ](../02-processes/routine-care.md)、[PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md)、[PROCESS-016：応急対応・復旧の調整と再開確認](../02-processes/incident-restoration.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

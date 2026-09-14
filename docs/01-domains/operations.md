@@ -33,6 +33,19 @@ last_reviewed: 2026-09-13
 - 給排水の衛生維持や害虫防除等を、適用条件と測定・調査結果に応じて行う。
 - 作業で見つけた異常を連絡し、結果と変更した設定を残す。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-009：設備運転・監視・設定調整](../02-processes/operation-monitoring.md) | 運転・設定変更の結果 |
+| [PROCESS-010：軽微な保守・手入れ](../02-processes/routine-care.md) | 手入れ・交換等の実施結果 |
+| [PROCESS-011：建物内外の清掃・汚れの予防](../02-processes/cleaning.md) | 清掃実施結果 |
+| [PROCESS-012：給排水の衛生維持・害虫防除](../02-processes/sanitary-maintenance.md) | 衛生対策の結果 |
+
+関連する他領域の業務：[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md)、[PROCESS-014：環境・衛生の測定調査と評価](../02-processes/environment-measurement.md)、[PROCESS-015：不具合・異常の受付と影響判断](../02-processes/incident-triage.md)、[PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。

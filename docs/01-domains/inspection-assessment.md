@@ -33,6 +33,17 @@ last_reviewed: 2026-09-13
 - 結果と基準を照合し、対応要否・追加調査・判断できない点を整理する。
 - 結果を異常対応や修繕・計画へ渡し、必要な再確認を行う。
 
+## 登録した主要業務
+
+[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| Process | 主な成果 |
+| --- | --- |
+| [PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md) | 点検・評価結果 |
+| [PROCESS-014：環境・衛生の測定調査と評価](../02-processes/environment-measurement.md) | 測定・調査値と条件 |
+
+関連する他領域の業務：[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-009：設備運転・監視・設定調整](../02-processes/operation-monitoring.md)、[PROCESS-010：軽微な保守・手入れ](../02-processes/routine-care.md)、[PROCESS-011：建物内外の清掃・汚れの予防](../02-processes/cleaning.md)、[PROCESS-012：給排水の衛生維持・害虫防除](../02-processes/sanitary-maintenance.md)、[PROCESS-015：不具合・異常の受付と影響判断](../02-processes/incident-triage.md)、[PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)、[PROCESS-022：報告・提出と未対応事項の追跡](../02-processes/reporting-followup.md)。
+
 ## 関係主体
 
 役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。
