@@ -16,6 +16,10 @@ last_reviewed: 2026-09-14
 
 法的要求、契約、事故・故障、利用方針変更は外部からProcessを起動し得る。すべての業務を一つの直線的な工程として実行する想定ではない。実施主体の役割は[BUSINESS-002](../00-business/actors.md)、目的は[BUSINESS-001](../00-business/overview.md)に従う。
 
+## 詳細フローへの入口
+
+初回詳細化した [PROCESS-007：作業調整](work-coordination.md#標準フロー)、[PROCESS-013：点検・状態評価](inspection.md#標準フロー)、[PROCESS-008：履行確認](completion-check.md#標準フロー) では、終了条件・段階別の役割／根拠・判断・代表例外・使用情報を確認できる。[PROCESS-001の選定理由](overview.md#初回の詳細化対象)も参照。以下の79件の関係は維持し、資料にない手順や建物固有の決裁を追加しない。
+
 ## 共通パターンと適用限界
 
 [JFMAの管理循環](https://www.jfma.or.jp/whatsFM/index.html)は計画・運営維持・評価等のつながりを示し、[官庁施設向け資料](https://www.cbr.mlit.go.jp/eizen/hozen/hozen_tantou.htm)は年度・中長期計画と履歴を扱う。これを手がかりに、本知識ベースでは「要求・計画→実施条件→実施・状態確認→記録・評価→要求・計画の見直し」を**共通の整理パターン**とする。参照日：2026-09-14。
