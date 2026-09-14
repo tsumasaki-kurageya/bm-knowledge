@@ -3,7 +3,7 @@ id: BUSINESS-003
 type: business
 status: draft
 confidence: medium
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-14
 ---
 
 # 活動のつながりと時間軸
@@ -11,6 +11,10 @@ last_reviewed: 2026-09-13
 ## 目的
 
 [BUSINESS-001](overview.md) に挙げた目的を、日常の活動と中長期の判断につなげます。以下は [S1](sources.md#s1)、[S3](sources.md#s3)、[S4](sources.md#s4)、[S7](sources.md#s7) を踏まえた概念整理です。個別業務の標準手順を確定するものではありません。
+
+## Processとの接続
+
+[PROCESS-024：業務関係とライフサイクル](../02-processes/lifecycle.md)に、主要業務の起動条件・受渡し・判断分岐を整理した。以下は概念の俯瞰で、個別の関係条件は送出側Process文書を正本とする。
 
 ## 活動の循環
 
@@ -65,4 +69,4 @@ flowchart TD
 
 - 緊急性・重要度を評価する具体的な基準と承認権限。
 - 運用調整・修理・更新の比較方法、停止損失を含む経済性の評価方法。
-- 業務領域間の入出力と例外。後続 Issue で個別の Process と接続する。
+- 主要業務間の入出力はPROCESS-024から参照可能。用途固有の条件と詳細な例外は引き続き確認する。
