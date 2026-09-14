@@ -20,6 +20,10 @@ last_reviewed: 2026-09-14
 
 初回詳細化した [PROCESS-007：作業調整](work-coordination.md#標準フロー)、[PROCESS-013：点検・状態評価](inspection.md#標準フロー)、[PROCESS-008：履行確認](completion-check.md#標準フロー) では、終了条件・段階別の役割／根拠・判断・代表例外・使用情報を確認できる。[PROCESS-001の選定理由](overview.md#初回の詳細化対象)も参照。以下の79件の関係は維持し、資料にない手順や建物固有の決裁を追加しない。
 
+## 追加詳細への入口
+
+[PROCESS-015：異常受付](incident-triage.md#標準フロー)、[PROCESS-016：応急・復旧調整](incident-restoration.md#標準フロー)、[PROCESS-003：年度計画](annual-plan.md#標準フロー)、[PROCESS-004：中長期計画](long-term-plan.md#標準フロー)も詳細化した。受付と復旧、工事完了と再開、計画と実施承認の違いを確認できる。[PROCESS-001の追加対象](overview.md#追加の詳細化対象)に選定理由を記載した。以下の既存の関係・図は維持している。
+
 ## 共通パターンと適用限界
 
 [JFMAの管理循環](https://www.jfma.or.jp/whatsFM/index.html)は計画・運営維持・評価等のつながりを示し、[官庁施設向け資料](https://www.cbr.mlit.go.jp/eizen/hozen/hozen_tantou.htm)は年度・中長期計画と履歴を扱う。これを手がかりに、本知識ベースでは「要求・計画→実施条件→実施・状態確認→記録・評価→要求・計画の見直し」を**共通の整理パターン**とする。参照日：2026-09-14。
