@@ -1,0 +1,5 @@
+/.pages-docs/
+/mkdocs.generated.yml
+/site/
+/.venv/
+__pycache__/
