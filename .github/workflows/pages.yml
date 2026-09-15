@@ -18,19 +18,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-node@v6
         with:
-          python-version: '3.12'
-          cache: pip
-          cache-dependency-path: requirements-pages.txt
-      - run: python -m pip install -r requirements-pages.txt
-      - run: python scripts/prepare_pages.py
-      - run: python -m mkdocs build --strict -f mkdocs.generated.yml
-      - run: python scripts/check_pages.py
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
       - uses: actions/upload-pages-artifact@v4
         if: github.ref == 'refs/heads/main'
         with:
-          path: site
+          path: dist
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

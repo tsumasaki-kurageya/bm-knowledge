@@ -1,0 +1,10 @@
+:root { --sl-content-width: 60rem; }
+.review-meta { display: flex; flex-wrap: wrap; gap: .35rem 1rem; border-inline-start: 4px solid var(--sl-color-accent); background: var(--sl-color-gray-6); padding: .8rem 1rem; margin-top: 1rem; font-size: .85rem; }
+.sl-markdown-content table { display: block; overflow-x: auto; max-width: 100%; font-size: .9rem; }
+.sl-markdown-content th, .sl-markdown-content td { min-width: 9rem; vertical-align: top; }
+.sl-markdown-content pre.mermaid { overflow: auto; padding: 1rem; background: #fff; color: #222; }
+pre.mermaid svg { min-width: 640px; max-width: none !important; }
+@media (max-width: 50rem) {
+  .review-meta { gap: .3rem .8rem; }
+  .sl-markdown-content th, .sl-markdown-content td { min-width: 8rem; }
+}

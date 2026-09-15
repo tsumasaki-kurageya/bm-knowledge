@@ -1,50 +1,77 @@
 # Markdownレビューサイトの運用
 
-Issue #18。既存MarkdownからMkDocsで閲覧用HTMLを生成する。一般知識の内容を二重管理せず、mainへのマージ後にGitHub Actionsで更新する。
+Issue #20でMkDocsからAstro＋Starlightへ移行。Markdownが正本で、mainへのマージ後にGitHub Actionsで閲覧サイトを更新する。
 
-## 公開対象
+## 公開対象と原稿
 
-`scripts/prepare_pages.py`が`docs/00-business`、`docs/01-domains`、`docs/02-processes`のMarkdownだけを生成用ディレクトリへコピーする。サイト用ホームとCSS・JavaScriptを加え、それ以外の原稿・添付ファイル・Evidence・Insight・テンプレートはコピーしない。検索索引も生成対象のページだけを収録する。
+`docs/00-business`、`docs/01-domains`、`docs/02-processes`のMarkdownと、`pages/index.md`を掲載する。Evidence・Insight・添付資料・テンプレートは生成対象に含めない。公開対象のディレクトリへ現場固有の機密情報を置かない。
 
-対象ディレクトリ内への新規Markdown追加は自動でメニューへ反映される。ここへ現場固有の機密情報を置かない。対象外文書へリンクを追加するとビルド時のリンク検証で検出されるため、公開範囲を検討してから扱いを決める。
+`scripts/prepare-pages.mjs`が生成用コピーを`src/content/docs`へ作成する。タイトル・表示用メタデータを補い、重複するH1だけを生成コピーから除く。原稿のFrontmatter・永続ID・本文は変更しない。文書追加時はID順でメニューに自動反映される。
 
-## 初回のGitHub設定
-
-1. 公開対象の一般知識文書を確認し、この実装PRをmainへマージする。
-2. リポジトリの **Settings → Pages → Build and deployment → Source** で **GitHub Actions** を選ぶ。
-3. **Actions → Markdown review site → Run workflow** でmainを実行する。初回マージ時のデプロイが設定前で失敗した場合も、設定後に再実行する。
-4. デプロイ成功後、Settings → Pagesの **Visit site** から確認する。
-
-予定URL：<https://tsumasaki-kurageya.github.io/bm-knowledge/>
-
-このリポジトリは作業時点でprivate。privateリポジトリのPages利用には対応プランが必要で、サイトの閲覧範囲はリポジトリのprivate設定とは別。通常のPagesサイトはインターネットに公開される。リポジトリ自体をpublicへ変更する必要はない。公開できない内容を含む場合は、Pagesを有効にする前に閲覧制限のある配信方式を別途検討する。
+文書間のMarkdownリンクは描画時にサイトURLへ変換する。公開対象外へのリンクや不正な日本語アンカーはビルド後の検証で検出する。
 
 ## ローカルで確認
 
-Python 3.12を使用する。
+Node.js 24とnpmを使用する。依存バージョンはpackage-lock.jsonで固定する。
 
 ```sh
-python -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements-pages.txt
-python scripts/prepare_pages.py
-python -m mkdocs build --strict -f mkdocs.generated.yml
-python scripts/check_pages.py
-python -m mkdocs serve -f mkdocs.generated.yml
+npm ci
+npm run dev
 ```
 
-原稿を編集した後は`prepare_pages.py`を再実行する。生成先の`.pages-docs`や`site`を直接編集・コミットしない。
+表示URL：<http://localhost:4321/bm-knowledge/>
 
-## レビューと表示
+原稿編集後は`npm run prepare:docs`を再実行すると、生成コピーの更新を開発サーバーが検出する。生成先の`src/content/docs`、`.generated`、`.astro`、`dist`は直接編集・コミットしない。
 
-PRでは生成・リンク検証だけを実行し、公開サイトを更新しない。mainへ取り込んだ文書だけが公開される。未マージの原稿はローカル起動で確認する。サイトの「Markdown原文」「修正を提案」はGitHubを開くため、privateリポジトリのアクセス権が必要。
+本番ビルドと検索を確認する場合：
 
-日本語見出しをアンカーに残し、表と大きな図は領域内で横スクロールできる。Mermaid 11.12.0はjsDelivrからブラウザで読み込む。読み込みに失敗しても図の定義は残す。検索はMkDocsのブラウザ内検索を利用する。
+```sh
+npm run build
+npm run preview
+```
+
+Pagefind検索は本番ビルドで生成されるため、検索操作はpreviewで確認する。ビルド開始時に以前のdistを削除し、古いページが残らないようにする。
+
+ブラウザの検証：
+
+```sh
+npx playwright install chromium
+npx playwright test
+```
+
+CIではLinux向けのブラウザ依存もインストールする。旧URLの転送・日本語アンカー・原文リンク・Mermaid・日本語検索・モバイルナビゲーションを確認する。
+
+## 公開と更新
+
+サイト：<https://tsumasaki-kurageya.github.io/bm-knowledge/>
+
+GitHub PagesのSourceは **GitHub Actions** を継続使用する。ホスティング設定の変更は不要。PRではビルド・リンク・ブラウザ検証を行い、mainへのマージ後にdistを公開する。未マージの原稿はローカルで確認する。
+
+初回設定や再設定が必要な場合は、Settings → Pages → Build and deployment → SourceでGitHub Actionsを選び、Actions → Markdown review site → Run workflowでmainを実行する。
+
+リポジトリのprivate設定とPagesサイトの閲覧範囲は別。現在の公開対象は一般知識のみとし、Evidence等の公開範囲をこの移行では拡張しない。
+
+## URLと表示の互換性
+
+新しい文書URLは`/bm-knowledge/02-processes/annual-plan/`の形式。以前の`.html` URLには転送ページを生成し、クエリと見出しへのフラグメントを保持する。ホームの`index.html`も引き続き使用できる。元のタイトルの見出しアンカーも残す。
+
+Starlight標準の目次・サイドバー・日本語検索・テーマ切替を使用する。文書ID・状態・信頼度・確認日はページ上部に表示し、Markdown原文と修正提案Issueへ移動できる。privateリポジトリ上の操作にはGitHubのアクセス権が必要。
+
+Mermaidはnpm依存としてバンドルし、図のあるページで遅延読み込みする。外部CDNには依存しない。図の生成に失敗した場合は定義を残す。表・大きな図は領域内で横スクロールできる。
+
+## 主な構成
+
+- `astro.config.mjs`：Starlight、公開先、目次、Markdown変換
+- `scripts/site-config.mjs`：公開対象・ベースパス・リポジトリ
+- `src/content.config.ts`：文書情報のスキーマ
+- `src/components/ReviewTitle.astro`：文書情報・原文・修正提案
+- `scripts/check-pages.mjs`：生成ページ・ファイル・アンカーの検証
+- `tests/review.spec.ts`：ブラウザでのレビュー操作の検証
 
 ## 参照
 
-確認日：2026-09-14。
+確認日：2026-09-15。
 
-- [MkDocs設定](https://www.mkdocs.org/user-guide/configuration/)
-- [GitHub Pagesのカスタムワークフロー](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
-- [Pagesサイトの作成・公開範囲と対応プラン](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+- [Starlightのセットアップ](https://starlight.astro.build/manual-setup/)
+- [コンポーネントの差し替え](https://starlight.astro.build/guides/overriding-components/)
+- [AstroのGitHub Pages公開](https://docs.astro.build/en/guides/deploy/github/)
