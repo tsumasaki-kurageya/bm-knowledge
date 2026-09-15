@@ -18,8 +18,8 @@
 ## 読み始める入口
 
 - [BUSINESS-001：建物維持保全の全体像](docs/00-business/overview.md)
-- [DOMAIN-000：業務領域一覧](docs/01-domains/overview.md)
-- [PROCESS-001：業務カタログ](docs/02-processes/overview.md)
+- [DOMAIN-000：業務の分類](docs/01-domains/overview.md)
+- [PROCESS-001：業務フロー一覧](docs/02-processes/overview.md)
 
 ## Source of Truth
 
@@ -67,6 +67,8 @@ schemas/                 # Frontmatter と ID の規約
 ```
 
 ## 更新方法
+
+読者向け本文は[ガイドの書き方](maintenance/writing-guide.md)に従います。分類の選定理由や詳細化の履歴は[編集経緯](maintenance/editorial-history.md)へ分けています。
 
 基本フローは **Issue → Markdown 更新 → Pull Request → Review** です。
 

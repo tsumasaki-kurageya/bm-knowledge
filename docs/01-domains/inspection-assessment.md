@@ -6,13 +6,15 @@ confidence: medium
 last_reviewed: 2026-09-13
 ---
 
-# 点検・測定・状態評価
+<a id="点検測定状態評価"></a>
+
+# 点検・測定
 
 ## 概要
 
-建物や環境の状態を把握し、要求との差と対応の必要性を判断する領域。
+建物・設備・空気・水などの状態を調べ、手入れや修理などが必要かを判断する仕事です。
 
-[DOMAIN-000：業務領域一覧](overview.md)の初期分類。以下の目的・境界・業務例・関係は、末尾の資料を踏まえた本知識ベースの整理案であり、公式分類や現場で確認した実態ではない。
+公開資料をもとに仕事を分類しています。法令で定められた分類ではありません。
 
 ## 目的
 
@@ -22,9 +24,11 @@ last_reviewed: 2026-09-13
 
 劣化や衛生上の異常を見逃すこと、測定しても判定・対応へつながらないこと。
 
-## 対象範囲・境界
+<a id="対象範囲境界"></a>
 
-日常・定期・臨時の点検、測定、劣化調査、作業後の状態確認を含む。法定か任意かは属性であり、別領域に分割しない。運転制御に付随する監視は運用、建物全体の保全成果の評価は記録・報告・保全評価が扱う。
+## 扱う仕事・他の業務との違い
+
+日常・定期・臨時の点検、測定、劣化調査、作業後の状態確認を含む。法定か任意かは属性であり、別領域に分割しない。運転制御に付随する監視は運用、建物全体の保全成果の評価は記録・報告・改善が扱う。
 
 ## 含まれる主要業務
 
@@ -33,38 +37,44 @@ last_reviewed: 2026-09-13
 - 結果と基準を照合し、対応要否・追加調査・判断できない点を整理する。
 - 結果を異常対応や修繕・計画へ渡し、必要な再確認を行う。
 
-## 登録した主要業務
+<a id="登録した主要業務"></a>
 
-[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+## 個別の業務フロー
 
-| Process | 主な成果 |
+[PROCESS-001：業務フロー一覧](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| 業務 | 主な成果 |
 | --- | --- |
-| [PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md) | 点検・評価結果 |
-| [PROCESS-014：環境・衛生の測定調査と評価](../02-processes/environment-measurement.md) | 測定・調査値と条件 |
+| [PROCESS-013：建物・設備を点検し、状態を判断する](../02-processes/inspection.md) | 点検・評価結果 |
+| [PROCESS-014：空気・水などを測定し、衛生状態を確認する](../02-processes/environment-measurement.md) | 測定・調査値と条件 |
 
-関連する他領域の業務：[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-009：設備運転・監視・設定調整](../02-processes/operation-monitoring.md)、[PROCESS-010：軽微な保守・手入れ](../02-processes/routine-care.md)、[PROCESS-011：建物内外の清掃・汚れの予防](../02-processes/cleaning.md)、[PROCESS-012：給排水の衛生維持・害虫防除](../02-processes/sanitary-maintenance.md)、[PROCESS-015：不具合・異常の受付と影響判断](../02-processes/incident-triage.md)、[PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)、[PROCESS-022：報告・提出と未対応事項の追跡](../02-processes/reporting-followup.md)。
+関連する他領域の業務：[PROCESS-007：作業日時・設備停止・利用者への連絡を調整する](../02-processes/work-coordination.md)、[PROCESS-009：設備を運転・監視し、設定を調整する](../02-processes/operation-monitoring.md)、[PROCESS-010：消耗品の交換・手入れをする](../02-processes/routine-care.md)、[PROCESS-011：建物を清掃し、汚れを防ぐ](../02-processes/cleaning.md)、[PROCESS-012：水まわりを衛生的に保ち、害虫を防ぐ](../02-processes/sanitary-maintenance.md)、[PROCESS-015：異常の連絡を受け、影響を判断する](../02-processes/incident-triage.md)、[PROCESS-018：修繕・交換工事を行い、仕上がりを確認する](../02-processes/repair-execution.md)、[PROCESS-021：台帳・図面・作業記録を更新し、引き継ぐ](../02-processes/records-handover.md)、[PROCESS-022：結果を報告し、未対応のものを確認する](../02-processes/reporting-followup.md)。
 
-## 関係主体
+<a id="関係主体"></a>
 
-役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。
+## 関わる人
 
-| 主体 | 役割・関与 |
+担当者の例を示します。会社の種類だけで役割が決まるわけではなく、一人が複数の役割を持つこともあります。[BUSINESS-002](../00-business/actors.md)も参照。
+
+| 担当者の例 | 役割・関与 |
 | --- | --- |
 | 管理者・依頼者 | 対象・条件の提示と結果を受けた対応判断。 |
 | 点検者・測定者・専門家 | 必要な資格・知識の下で状態把握と技術評価。 |
 | 利用者・運用担当者 | 発生状況の提供、測定・停止・入室への協力。 |
 
-## 上流・下流・関連領域
+<a id="上流下流関連領域"></a>
+
+## 関連する業務分類
 
 順序を固定する工程表ではなく、主な情報・判断の受渡しを示す。
 
 | 関係 | ID | 関係の内容 |
 | --- | --- | --- |
-| 相互 | [DOMAIN-004：運用・維持作業](operations.md) | 運用で得た情報を調べ、調整・手入れの必要性を返す。 |
-| 下流 | [DOMAIN-006：異常・障害対応](incident-response.md) | 危険や機能障害を早期に引き渡す。 |
+| 相互 | [DOMAIN-004：日々の運転・手入れ・清掃](operations.md) | 運用で得た情報を調べ、調整・手入れの必要性を返す。 |
+| 下流 | [DOMAIN-006：異常・故障への対応](incident-response.md) | 危険や機能障害を早期に引き渡す。 |
 | 下流 | [DOMAIN-007：修繕・更新](repair-renewal.md) | 補修・更新の検討に必要な状態情報を渡す。 |
-| 下流 | [DOMAIN-002：保全計画・資金計画](planning.md) | 劣化傾向と対策候補を計画へ渡す。 |
-| 下流 | [DOMAIN-009：記録・報告・保全評価](records-evaluation.md) | 判定根拠・測定条件・未確認範囲を保存する。 |
+| 下流 | [DOMAIN-002：作業・修繕・費用の計画](planning.md) | 劣化傾向と対策候補を計画へ渡す。 |
+| 下流 | [DOMAIN-009：記録・報告・改善](records-evaluation.md) | 判定根拠・測定条件・未確認範囲を保存する。 |
 
 ## 情報源
 
@@ -74,4 +84,4 @@ last_reviewed: 2026-09-13
 ## 未確認事項
 
 - 用途・設備別の法定周期、資格、判定基準、報告先は個別の原典で確認する。
-- 遠隔監視と巡回点検が同じ情報を扱う場合の主領域は、Issue4で成果と判断目的により検証する。
+- 遠隔監視と巡回点検が同じ情報を扱う場合の主領域は、個別の業務で成果と判断目的により検証する。

@@ -2,6 +2,8 @@
 import Default from '@astrojs/starlight/components/PageTitle.astro';
 import { repository } from '../../scripts/site-config.mjs';
 const review = Astro.locals.starlightRoute.entry.data.review;
+const statuses = { draft: '確認中', exploring: '調査中', reviewed: '確認済み' };
+const confidences = { low: '根拠の確認が必要', medium: '根拠・適用範囲に確認点あり', high: '根拠を確認済み' };
 const issue = review && `${repository}/issues/new?${new URLSearchParams({
   title: `${review.id}：レビュー`,
   body: `対象：${review.source}\n\n見出し：\n\n修正内容・理由：\n`,
@@ -11,8 +13,8 @@ const issue = review && `${repository}/issues/new?${new URLSearchParams({
 <Default />
 {review && <aside class="review-meta" aria-label="文書情報">
   <strong>{review.id}</strong>
-  <span>状態: {review.status}</span>
-  <span>信頼度: {review.confidence}</span>
+  <span>{statuses[review.status] ?? review.status}</span>
+  <span>{confidences[review.confidence] ?? review.confidence}</span>
   <span>確認日: {review.last_reviewed}</span>
   <a href={`${repository}/blob/main/${review.source}`}>Markdown原文</a>
   <a href={issue}>修正を提案</a>
