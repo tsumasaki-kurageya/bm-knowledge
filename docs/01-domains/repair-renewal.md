@@ -10,9 +10,9 @@ last_reviewed: 2026-09-13
 
 ## 概要
 
-劣化や不具合に対する工事・交換を具体化し、必要な性能を回復・確保して運用へ戻す領域。
+傷んだ部分を直したり設備を交換したりして、必要な機能を取り戻す仕事です。
 
-[DOMAIN-000：業務領域一覧](overview.md)の初期分類。以下の目的・境界・業務例・関係は、末尾の資料を踏まえた本知識ベースの整理案であり、公式分類や現場で確認した実態ではない。
+公開資料をもとに仕事を分類しています。法令で定められた分類ではありません。
 
 ## 目的
 
@@ -22,7 +22,9 @@ last_reviewed: 2026-09-13
 
 不具合を放置すること、工事が必要な性能や利用条件と合わないこと、完了後の運用への引渡しが不足すること。
 
-## 対象範囲・境界
+<a id="対象範囲境界"></a>
+
+## 扱う仕事・他の業務との違い
 
 小規模な補修から設備更新・既存建物の改修までを対象とする。将来の候補・概算は計画、発注手続と関係者調整は実施体制、軽微な手入れは運用領域に関係付ける。新築事業自体は範囲外。
 
@@ -32,39 +34,45 @@ last_reviewed: 2026-09-13
 - 施工方法、費用、停止・安全条件を比較し、必要な設計と工事を行う。
 - 完了時の状態と要求を確認し、図書・変更情報・残課題を運用へ渡す。
 
-## 登録した主要業務
+<a id="登録した主要業務"></a>
 
-[PROCESS-001：業務カタログ](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+## 個別の業務フロー
 
-| Process | 主な成果 |
+[PROCESS-001：業務フロー一覧](../02-processes/overview.md)から、開始条件・入出力・前後業務を辿れる。
+
+| 業務 | 主な成果 |
 | --- | --- |
-| [PROCESS-017：修繕・更新案の具体化](../02-processes/repair-design.md) | 選定する対策案・範囲 |
-| [PROCESS-018：修繕・更新の実施と技術的引渡し](../02-processes/repair-execution.md) | 施工・試験等の結果 |
+| [PROCESS-017：修繕・交換の方法と範囲を決める](../02-processes/repair-design.md) | 選定する対策案・範囲 |
+| [PROCESS-018：修繕・交換工事を行い、仕上がりを確認する](../02-processes/repair-execution.md) | 施工・試験等の結果 |
 
-関連する他領域の業務：[PROCESS-004：中長期修繕・資金計画の作成と見直し](../02-processes/long-term-plan.md)、[PROCESS-006：委託範囲・仕様の整理と発注](../02-processes/commissioning.md)、[PROCESS-007：作業条件・停止・利用者調整](../02-processes/work-coordination.md)、[PROCESS-008：依頼・契約に対する履行確認](../02-processes/completion-check.md)、[PROCESS-010：軽微な保守・手入れ](../02-processes/routine-care.md)、[PROCESS-013：建築・設備の点検と状態評価](../02-processes/inspection.md)、[PROCESS-016：応急対応・復旧の調整と再開確認](../02-processes/incident-restoration.md)、[PROCESS-021：台帳・図書・履歴の更新と引継ぎ](../02-processes/records-handover.md)。
+関連する他領域の業務：[PROCESS-004：将来の修繕と費用を計画する](../02-processes/long-term-plan.md)、[PROCESS-006：依頼する作業を決めて発注する](../02-processes/commissioning.md)、[PROCESS-007：作業日時・設備停止・利用者への連絡を調整する](../02-processes/work-coordination.md)、[PROCESS-008：契約どおりに作業されたか確認する](../02-processes/completion-check.md)、[PROCESS-010：消耗品の交換・手入れをする](../02-processes/routine-care.md)、[PROCESS-013：建物・設備を点検し、状態を判断する](../02-processes/inspection.md)、[PROCESS-016：応急対応・復旧を進め、利用再開を確認する](../02-processes/incident-restoration.md)、[PROCESS-021：台帳・図面・作業記録を更新し、引き継ぐ](../02-processes/records-handover.md)。
 
-## 関係主体
+<a id="関係主体"></a>
 
-役割の例であり、特定の会社種別への固定的な割当ではない。同じ主体が複数の役割を担う場合がある。[BUSINESS-002](../00-business/actors.md)も参照。
+## 関わる人
 
-| 主体 | 役割・関与 |
+担当者の例を示します。会社の種類だけで役割が決まるわけではなく、一人が複数の役割を持つこともあります。[BUSINESS-002](../00-business/actors.md)も参照。
+
+| 担当者の例 | 役割・関与 |
 | --- | --- |
 | 所有者・承認者・費用負担者 | 対策・予算・実施条件を判断する。 |
 | 管理者・設計者・工事監理者等 | 要求整理、技術検討、工事と使用の調整。役割は規模等による。 |
 | 施工者・メーカー・利用者 | 施工・機器情報提供、停止調整、運用への引渡し。 |
 
-## 上流・下流・関連領域
+<a id="上流下流関連領域"></a>
+
+## 関連する業務分類
 
 順序を固定する工程表ではなく、主な情報・判断の受渡しを示す。
 
 | 関係 | ID | 関係の内容 |
 | --- | --- | --- |
-| 上流 | [DOMAIN-002：保全計画・資金計画](planning.md) | 計画候補を具体化し、費用・時期の変更を返す。 |
-| 上流 | [DOMAIN-003：業務実施体制・発注調整](delivery-coordination.md) | 発注・利用調整・履行確認の支援を受ける。 |
-| 上流 | [DOMAIN-005：点検・測定・状態評価](inspection-assessment.md) | 状態と技術的課題を受け、必要な完了確認につなぐ。 |
-| 上流 | [DOMAIN-006：異常・障害対応](incident-response.md) | 応急後の恒久対策を受け、復旧結果を返す。 |
-| 下流 | [DOMAIN-004：運用・維持作業](operations.md) | 変更後の設備・運用条件を引き渡す。 |
-| 下流 | [DOMAIN-009：記録・報告・保全評価](records-evaluation.md) | 工事・試験・図書・残課題の履歴を残す。 |
+| 上流 | [DOMAIN-002：作業・修繕・費用の計画](planning.md) | 計画候補を具体化し、費用・時期の変更を返す。 |
+| 上流 | [DOMAIN-003：担当・発注・作業の調整](delivery-coordination.md) | 発注・利用調整・契約どおりの作業かの確認の支援を受ける。 |
+| 上流 | [DOMAIN-005：点検・測定](inspection-assessment.md) | 状態と技術的課題を受け、必要な完了確認につなぐ。 |
+| 上流 | [DOMAIN-006：異常・故障への対応](incident-response.md) | 応急後の恒久対策を受け、復旧結果を返す。 |
+| 下流 | [DOMAIN-004：日々の運転・手入れ・清掃](operations.md) | 変更後の設備・運用条件を引き渡す。 |
+| 下流 | [DOMAIN-009：記録・報告・改善](records-evaluation.md) | 工事・試験・図書・残課題の履歴を残す。 |
 
 ## 情報源
 
