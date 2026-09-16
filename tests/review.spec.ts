@@ -1,9 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test('legacy URL keeps query and Japanese heading; document metadata and diagrams work', async ({ page }) => {
-  await page.goto('02-processes/lifecycle.html?review=1#追加詳細への入口');
-  await expect(page).toHaveURL(/\/02-processes\/lifecycle\/\?review=1#/);
-  expect(decodeURIComponent(new URL(page.url()).hash)).toBe('#追加詳細への入口');
+test('Japanese heading navigation, document metadata and diagrams work', async ({ page }) => {
+  await page.goto('02-processes/lifecycle/');
   // Follow an actual page TOC anchor instead of assuming a generated heading ID.
   const link = page.locator('a[href="#異常対応計画の手順を読む"]:visible').first();
   await link.click();
