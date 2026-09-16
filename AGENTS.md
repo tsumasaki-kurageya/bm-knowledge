@@ -48,6 +48,10 @@
 - 関連文書はファイルパスだけでなく永続 ID も併記する。
 - ファイルを移動・改名した場合は、リポジトリ内の参照を更新する。
 
+## 文書編集スキル
+
+読者向けガイドを作成・編集・再構成するときは、[building-maintenance-docs](.agents/skills/building-maintenance-docs/SKILL.md) を使う。文章と情報設計の具体的なルールはスキル内の参照Markdownにまとめる。
+
 ## 変更手順
 
 1. 対象 Issue と完了条件を読む。

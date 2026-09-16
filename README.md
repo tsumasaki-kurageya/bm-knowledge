@@ -68,7 +68,7 @@ schemas/                 # Frontmatter と ID の規約
 
 ## 更新方法
 
-読者向け本文は[ガイドの書き方](maintenance/writing-guide.md)に従います。分類の選定理由や詳細化の履歴は[編集経緯](maintenance/editorial-history.md)へ分けています。
+読者向け本文は[文書編集スキル](.agents/skills/building-maintenance-docs/SKILL.md)と、その参照Markdownに従います。分類の選定理由や詳細化の履歴は[編集経緯](maintenance/editorial-history.md)へ分けています。
 
 基本フローは **Issue → Markdown 更新 → Pull Request → Review** です。
 
